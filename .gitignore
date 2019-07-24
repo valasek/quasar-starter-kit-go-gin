@@ -1,0 +1,78 @@
+# file types
+*.test
+*.prof
+*.db
+*.DS_Store
+
+# Binaries for programs and plugins
+timesheet.zip
+*.exe
+*.bin
+*.app
+*.app.zip
+*.exe~
+*.dll
+*.so
+*.o
+*.a
+*.dylib
+
+# folders
+vendor
+node_modules
+tmp
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+info.log
+error.log
+general.log
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+go.mod 
+go.sum
+
+# temporary build artifacts
+build/*.*
+build/client/*.*
+build/client/dist/*.*
+build/client/dist/js/*.*
+build/client/dist/css/*.*
+build/client/dist/fonts/*.*
+build/client/dist/statics/*.*
+build/client/dist/statics/icons/*.*
+build/data/*.*
+build/data/exported/*.*
+build/data/backups/*.*
+build/data/uploaded/*.*
+build/documentation/*.*
+build/documentation/statics/*.*
+build/logs/*.*
+
+# backup and log files
+server/data/backups/*
+server/data/exported/*
+server/data/uploaded/*
+timesheet-backup.zip
+logs/*
+
+# private seed data
+timesheet-data.xlsx
+~$timesheet-data.xlsx
+*_dataarch.csv
+*-dataarch.yaml
+timesheet-prod.yaml
+timesheet-prod.dataarch.yaml

@@ -3,65 +3,81 @@ Go / Gin / Quasar Framework Starter Kit
 
 ## Features
 
-&nbsp; &nbsp; ✓ Component-based front-end development via [Webpack](https://webpack.github.io/) and [React](https://facebook.github.io/react) (see [`webpack.config.js`](webpack.config.js))  
-&nbsp; &nbsp; ✓ Static type checking with [TypeScript](https://www.typescriptlang.org)  
-&nbsp; &nbsp; ✓ Application state management via [Redux](http://redux.js.org/)  
-&nbsp; &nbsp; ✓ Universal cross-stack routing and navigation [`history`](https://github.com/ReactJSTraining/history) (see [`client/routes.tsx`](client/routes.tsx))  
-&nbsp; &nbsp; ✓ Hot Module Replacement ([HMR](https://webpack.github.io/docs/hot-module-replacement.html)) /w [React Hot Loader](http://gaearon.github.io/react-hot-loader/)  
-&nbsp; &nbsp; ✓ Lightweight build automation with plain JavaScript (see [`run.js`](run.js))  
-&nbsp; &nbsp; ✓ Cross-device testing with [Browsersync](https://browsersync.io/)
+&nbsp; &nbsp; ✓ Allows you to start server on HTTPS / HTTP
 
-## Styling
-The project is framework agnostic so you can easily add your preferred styling framework. 
-   
-&nbsp; &nbsp; [Bootstrap 4 components](https://reactstrap.github.io/)   
-&nbsp; &nbsp; [Ant design components](https://ant.design/)   
-&nbsp; &nbsp; [Material UI components](https://material-ui.com/)   
-   
-Or extend the loaders in webpack.config.js to compile your own [SASS](https://github.com/webpack-contrib/sass-loader) or [LESS](https://github.com/webpack-contrib/less-loader) styles.
+&nbsp; &nbsp; ✓ Includes file download example
 
-Another option instead of css could be to use css-in-js. Your can see a list of frameworks at MicheleBertoli's great repo [here](https://github.com/MicheleBertoli/css-in-js). [Emotion](https://github.com/emotion-js/emotion) has worked in a few test projects but feedback on a good library that plays well with typescript are appreciated. 
+&nbsp; &nbsp; ✓ Includes file upload example
+
+DB support can be added via go/db or e.g. via gorm- [Gorm](https://github.com/jinzhu/gorm)
+
+# Standing on the shoulders of giants
+
+[Go](https://golang.org/), [Gin web framework](https://github.com/gin-gonic), [Vue](https://vuejs.org/), [Quasar](https://quasar.dev/)
+
+## Go Backend
+
+- [Gin web framework](https://github.com/gin-gonic)
+- [Logrus](https://github.com/sirupsen/logrus), [Cobra](https://github.com/spf13/cobra), [Viper](https://github.com/spf13/viper), [lumberjackrus](https://github.com/orandin/lumberjackrus)
+
+## JS Frontend
+
+- [Vue.js](https://vuejs.org/) spa client with webpack
+- [Quasar framework](https://quasar.dev/)
+- [Axios](https://github.com/axios/axios)
 
 ## Prerequisites
 
 * OS X, Windows or Linux
 * [Node.js](https://nodejs.org) v6 or newer
-* [.NET Core](https://www.microsoft.com/net/core) and [.NET Core SDK](https://www.microsoft.com/net/core)
+* [Go](https://golang.org/)
 * [Visual Studio Code](https://code.visualstudio.com/) or your prefered IDE.
 
-### Getting Started
+# Getting Started
 
 **Step 1**. Clone the latest version of **Go / Gin / Quasar Framework Starter Kit** on your local machine by running:
 
 ```shell
-$ git clone -o aspnet-starter-kit -b master --single-branch \
-      https://github.com/valasek/quasar-starter-kit-go-gin.git MyApp
+$ git clone -o quasar-starter-kit-go-gin -b master --single-branch https://github.com/valasek/quasar-starter-kit-go-gin.git MyApp
 $ cd MyApp
 ```
 
-**Step 2**. Install project dependencies listed in
-[`client/package.json`](client/package.json) files: 
+## Client
+
+**Step 2**. Install project dependencies listed in [`client/package.json`](client/package.json) files: 
 
 ```shell
-$ npm install                   # Install both Node.js and .NET Core dependencies
+$ cd client
+```
+
+```shell
+$ npm install                   # Install Node.js dependencies
 ```
 
 or using Yarn:
 
 ```shell
-$ yarn install                   # Install both Node.js and .NET Core dependencies
+$ yarn install                   # Install Node.js dependencies
 ```
 
-**Step 3**. Finally, launch your web app:
+**Step 3**. Launch your web app:
 
 ```shell
 $ quasar dev                      # Compile and lanch the app, the same as running: npm dev or yarn dev
 ```
 
-The app should become available at [http://localhost:8080/](http://localhost:8080/).
-See [`client/package.js`](client/package.js) for other available commands such as `node run build` etc.
-You can also run your app in a release (production) mode by running `node run --release`, or without
-Hot Module Replacement (HMR) by running `node run --no-hmr`.
+The app should become available at [http://localhost:8080/](http://localhost:8080/). See [`client/package.json`](client/package.json) for other available commands such as `quasar build` etc.
+
+## Server
+
+**Step 4**. Launch your server: 
+
+```shell
+$ cd ../server
+$ go run quasar-starter-kit-go-gin.go server    # Will install required Go packages and run the server in dev mode
+```
+
+The server will listen on [http://localhost:3000/](http://localhost:3000/).
 
 ## How to Update
 

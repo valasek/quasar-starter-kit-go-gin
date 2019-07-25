@@ -5,7 +5,6 @@
 *.DS_Store
 
 # Binaries for programs and plugins
-timesheet.zip
 *.exe
 *.bin
 *.app
@@ -45,34 +44,5 @@ general.log
 go.mod 
 go.sum
 
-# temporary build artifacts
-build/*.*
-build/client/*.*
-build/client/dist/*.*
-build/client/dist/js/*.*
-build/client/dist/css/*.*
-build/client/dist/fonts/*.*
-build/client/dist/statics/*.*
-build/client/dist/statics/icons/*.*
-build/data/*.*
-build/data/exported/*.*
-build/data/backups/*.*
-build/data/uploaded/*.*
-build/documentation/*.*
-build/documentation/statics/*.*
-build/logs/*.*
-
 # backup and log files
-server/data/backups/*
-server/data/exported/*
-server/data/uploaded/*
-timesheet-backup.zip
 logs/*
-
-# private seed data
-timesheet-data.xlsx
-~$timesheet-data.xlsx
-*_dataarch.csv
-*-dataarch.yaml
-timesheet-prod.yaml
-timesheet-prod.dataarch.yaml

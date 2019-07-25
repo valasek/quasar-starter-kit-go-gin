@@ -1,0 +1,19 @@
+### Default configuration file
+
+######################
+# User settings #
+
+# insert here user settings
+
+########################
+# Application settings #
+SSL: false # true/false, if server has SSL certificate set to true to use HTTPS, false = HTTP
+GIN_MODE: "release" # "debug" or "release" - switch server app mode
+url: "localhost" # URL on which application is running
+PORT: "3000" # port on which application is running
+
+# Log folder, relative to quasar-starter-kit-go-gin folder
+logFolder: "logs"
+
+# # Folder for uploaded data, relative to quasar-starter-kit-go-gin folder
+uploadFolder: "data"

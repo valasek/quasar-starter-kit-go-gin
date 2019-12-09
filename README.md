@@ -57,7 +57,7 @@ $ npm install                   # Install Node.js dependencies
 or using Yarn:
 
 ```shell
-$ yarn install                   # Install Node.js dependencies
+$ yarn                          # Install Node.js dependencies
 ```
 
 **Step 3**. Launch your web app:
